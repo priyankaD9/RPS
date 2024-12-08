@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>RPS Game</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="score-board">
+        <div class="title">
+          <h1>ROCK</h1>
+          <h1>PAPER</h1>
+          <h1>SCISSORS</h1>
+        </div>
+        <div class="score-sheet">
+          <div class="comp score">
+            <p>COMPUTER SCORE</p>
+            <h1 class="comp-score"></h1>
+          </div>
+          <div class="player score">
+            <p>YOUR</p>
+            <p>SCORE</p>
+            <h1 class="my-score"></h1>
+          </div>
+        </div>
+      </div>
+      <div class="playground">
+        <div class="play-board">
+          <div class="lines">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+          </div>
+
+          <div id="rock" class="game-key rock key">
+            <img src="/rock.png" alt="" />
+          </div>
+          <div id="paper" class="game-key paper key">
+            <img src="/paper.png" alt="" />
+          </div>
+          <div id="scissors" class="game-key scissors key">
+            <img src="/scissors.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <div class="rules-card">
+        <button class="toggle-rules">X</button>
+        <p id="r-head">Game Rules</p>
+        <ul>
+          <li>
+            Rock beats scissors, scissors beat paper, and paper beats rock.
+          </li>
+          <li>
+            Agree ahead of time whether you’ll count off “rock, paper, scissors,
+            shoot” or just “rock, paper, scissors.”
+          </li>
+          <li>
+            Use rock, paper, scissors to settle minor decisions or simply play
+            to pass the time
+          </li>
+          <li>
+            If both players lay down the same hand, each player lays down
+            another hand
+          </li>
+        </ul>
+      </div>
+      <button class="secondary-btn btn toggle-rules">RULES</button>
+      <button class="secondary-btn btn next">NEXT</button>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
